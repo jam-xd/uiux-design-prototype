@@ -932,3 +932,84 @@ a.wf-card:hover {
   color: var(--wf-ink-muted);
   background-color: var(--wf-bg-surface);
 }
+
+/* ==========================================================================
+   Componentes adicionales (Flujo 3 - Finalizar y valorar)
+   ========================================================================== */
+.wf-check-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wf-check-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--wf-ink-primary);
+}
+
+.wf-check-box {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--wf-border-medium);
+  border-radius: 5px;
+  background-color: var(--wf-bg-phone);
+  flex-shrink: 0;
+}
+
+.wf-evidence-box {
+  width: 100%;
+  min-height: 112px;
+  border: 1px solid var(--wf-border-medium);
+  border-radius: var(--wf-radius-box);
+  background-color: var(--wf-bg-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  font-size: 13px;
+  color: var(--wf-ink-secondary);
+}
+
+.wf-stars {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--wf-ink-primary);
+}
+
+.wf-big-credit {
+  text-align: center;
+  padding: 18px 0 8px;
+}
+
+.wf-big-credit-num {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.wf-section-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--wf-ink-primary);
+  margin-bottom: 8px;
+}
+
+.wf-text-link {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--wf-ink-secondary);
+  padding: 6px;
+}
