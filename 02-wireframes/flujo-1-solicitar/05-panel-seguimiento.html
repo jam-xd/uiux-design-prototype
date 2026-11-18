@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05. Panel de seguimiento — Wireframe Flujo 1</title>
+  <link rel="stylesheet" href="../../styles/reset.css">
+  <link rel="stylesheet" href="../../styles/wireframe.css">
+</head>
+<body>
+  <div class="wf-canvas-header">
+    <span>05. Panel de seguimiento</span>
+    <a class="wf-canvas-back" href="../../index.html">← Índice</a>
+  </div>
+
+  <main class="phone-frame">
+    <header class="wf-topbar wf-topbar--no-border">
+      <div class="wf-topbar-left">
+        <span>Mis intercambios</span>
+      </div>
+      <span class="wf-badge-box">8 CR</span>
+    </header>
+
+    <div class="wf-tabs" role="tablist">
+      <div class="wf-tab">Recibidas (0)</div>
+      <div class="wf-tab wf-tab--active">Enviadas (1)</div>
+    </div>
+
+    <section class="wf-content">
+      <div class="wf-callout">
+        <div class="wf-callout-label">ESTADO ACTUAL</div>
+        <p class="wf-callout-text">Explicación breve de la fase en la que se encuentra el intercambio.</p>
+      </div>
+
+      <article class="wf-card">
+        <div class="wf-card-footer" style="margin-bottom: 10px;">
+          <span class="wf-status-badge">En coordinación</span>
+          <span class="wf-text-meta">Hace 5 min</span>
+        </div>
+
+        <h2 class="wf-title-md" style="margin-bottom: 4px;">Revisión y mejora de hoja de vida</h2>
+        <p class="wf-card-subtitle" style="margin-bottom: 12px;">
+          Con Oferente 1 • 2 CR retenidos
+        </p>
+
+        <a class="wf-btn wf-btn--secondary wf-btn--sm" href="06-coordinacion.html">
+          Ir a coordinación
+        </a>
+      </article>
+
+      <div class="wf-spacer"></div>
+    </section>
+
+    <nav class="wf-bottom-nav" aria-label="Navegación principal">
+      <a class="wf-nav-item" href="01-explorar.html">
+        <span class="wf-nav-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>
+        </span>
+        <span>Inicio</span>
+      </a>
+      <a class="wf-nav-item" href="01-explorar.html">
+        <span class="wf-nav-icon">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        </span>
+        <span>Explorar</span>
+      </a>
+      <a class="wf-nav-item" href="../flujo-2-ofrecer/01-mis-servicios.html">
+        <span class="wf-nav-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </span>
+        <span>Mis serv.</span>
+      </a>
+      <a class="wf-nav-item wf-nav-item--active" href="05-panel-seguimiento.html">
+        <span class="wf-nav-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </span>
+        <span>Solicitudes</span>
+      </a>
+      <a class="wf-nav-item" href="#">
+        <span class="wf-nav-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </span>
+        <span>Perfil</span>
+      </a>
+    </nav>
+  </main>
+</body>
+</html>

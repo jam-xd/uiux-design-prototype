@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>uiux-design-prototype — Índice de Wireframes</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #ececec;
+      color: #111111;
+      padding: 32px 16px;
+      line-height: 1.5;
+    }
+
+    .hub {
+      max-width: 780px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 2px solid #111111;
+      padding: 24px;
+    }
+
+    .hub-header {
+      border-bottom: 1px solid #111111;
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
+
+    .hub-header h1 {
+      font-size: 22px;
+      margin-bottom: 4px;
+    }
+
+    .hub-header p {
+      font-size: 13px;
+      color: #555555;
+    }
+
+    .flow-section {
+      margin-bottom: 24px;
+    }
+
+    .flow-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border: 1px solid #111111;
+      background: #f2f2f2;
+    }
+
+    .badge--done {
+      background: #111111;
+      color: #ffffff;
+    }
+
+    .screen-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 10px;
+    }
+
+    .screen-link {
+      display: block;
+      border: 1px solid #888888;
+      padding: 12px;
+      background: #ffffff;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .screen-link:hover {
+      background: #f2f2f2;
+      border-color: #111111;
+    }
+
+    .screen-link span {
+      display: block;
+      font-size: 11px;
+      font-weight: 400;
+      color: #666666;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+<body>
+  <main class="hub">
+    <header class="hub-header">
+      <h1>uiux-design-prototype</h1>
+      <p>Mapa de navegación — Wireframes de baja fidelidad (HTML + CSS)</p>
+    </header>
+
+    <section class="flow-section">
+      <div class="flow-title">
+        <span>Flujo 1: Solicitar ayuda (Seeker)</span>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          <a class="badge badge--done" href="02-wireframes/flujo-1-solicitar/visor.html">▶ Abrir visor (1 pestaña)</a>
+          <span class="badge">Listo (6/6)</span>
+        </div>
+      </div>
+      <ul class="screen-list">
+        <li>
+          <a class="screen-link" href="02-wireframes/flujo-1-solicitar/01-explorar.html">
+            01. Explorar guiado
+            <span>Inicio, búsqueda, filtros y cards</span>
+          </a>
+        </li>
+        <li>
+          <a class="screen-link" href="02-wireframes/flujo-1-solicitar/02-detalle-servicio.html">
+            02. Detalle del servicio
+            <span>Paso 1/3 — Requisitos y costo</span>
+          </a>
+        </li>
+        <li>
+          <a class="screen-link" href="02-wireframes/flujo-1-solicitar/03-solicitud-guiada.html">
+            03. Solicitud guiada
+            <span>Paso 2/3 — Contexto y retención</span>
+          </a>
+        </li>
+        <li>
+          <a class="screen-link" href="02-wireframes/flujo-1-solicitar/04-confirmacion.html">
+            04. Confirmación
+            <span>Paso 3/3 — Siguientes pasos</span>
+          </a>
+        </li>
+        <li>
+          <a class="screen-link" href="02-wireframes/flujo-1-solicitar/05-panel-seguimiento.html">
+            05. Panel de seguimiento
+            <span>Mis intercambios y estado</span>
+          </a>
+        </li>
+        <li>
+          <a class="screen-link" href="02-wireframes/flujo-1-solicitar/06-coordinacion.html">
+            06. Espacio de coordinación
+            <span>Chat guiado y confirmar entrega</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="flow-section">
+      <div class="flow-title">
+        <span>Flujo 2: Ofrecer mis habilidades (Giver)</span>
+        <span class="badge">Pendiente</span>
+      </div>
+    </section>
+
+    <section class="flow-section">
+      <div class="flow-title">
+        <span>Flujo 3: Finalizar y valorar intercambio</span>
+        <span class="badge">Pendiente</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

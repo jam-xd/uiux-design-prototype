@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>06. Espacio de coordinación guiado — Wireframe Flujo 1</title>
+  <link rel="stylesheet" href="../../styles/reset.css">
+  <link rel="stylesheet" href="../../styles/wireframe.css">
+</head>
+<body>
+  <div class="wf-canvas-header">
+    <span>06. Espacio de coordinación guiado</span>
+    <a class="wf-canvas-back" href="../../index.html">← Índice</a>
+  </div>
+
+  <main class="phone-frame">
+    <header class="wf-topbar">
+      <a class="wf-topbar-left" href="05-panel-seguimiento.html">
+        <span>←</span>
+        <span>Nombre contraparte</span>
+      </a>
+      <span class="wf-badge-box">2 CR</span>
+    </header>
+
+    <div class="wf-action-banner">
+      <div class="wf-action-banner-top">
+        <span class="wf-action-banner-label">ACCIÓN REQUERIDA AL FINALIZAR</span>
+        <span class="wf-action-banner-btn">Confirmar entrega</span>
+      </div>
+      <p class="wf-action-banner-note">
+        Recordatorio: No liberes créditos hasta recibir el archivo.
+      </p>
+    </div>
+
+    <section class="wf-chat-area" aria-label="Mensajes de coordinación">
+      <div class="wf-bubble wf-bubble--outgoing">
+        Mensaje saliente con el contexto de la solicitud.
+      </div>
+      <div class="wf-bubble wf-bubble--attachment">
+        Archivo adjunto.pdf
+      </div>
+      <div class="wf-bubble wf-bubble--incoming">
+        Mensaje entrante confirmando recepción y horario.
+      </div>
+    </section>
+
+    <form class="wf-chat-composer" action="#" onsubmit="return false;">
+      <span class="wf-chat-plus">+</span>
+      <input
+        class="wf-chat-input"
+        type="text"
+        placeholder="Escribe un mensaje..."
+        aria-label="Campo de texto"
+      >
+      <button class="wf-chat-send" type="button">Enviar</button>
+    </form>
+  </main>
+</body>
+</html>
