@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. Solicitud guiada — Wireframe Flujo 1</title>
+  <link rel="stylesheet" href="../../styles/reset.css">
+  <link rel="stylesheet" href="../../styles/wireframe.css">
+</head>
+<body>
+  <div class="wf-canvas-header">
+    <span>03. Solicitud guiada</span>
+    <a class="wf-canvas-back" href="../../index.html">← Índice</a>
+  </div>
+
+  <main class="phone-frame">
+    <header class="wf-topbar wf-topbar--no-border">
+      <a class="wf-topbar-left" href="02-detalle-servicio.html">
+        <span>←</span>
+        <span>Configurar pedido</span>
+      </a>
+      <span class="wf-topbar-step">PASO 2/3</span>
+    </header>
+
+    <section class="wf-content">
+      <div class="wf-progress" aria-label="Paso 2 de 3">
+        <div class="wf-progress-step wf-progress-step--active"></div>
+        <div class="wf-progress-step wf-progress-step--active"></div>
+        <div class="wf-progress-step"></div>
+      </div>
+
+      <div>
+        <label class="wf-field-label" for="contexto-pedido">
+          1. ¿Qué necesitas lograr con este servicio?
+        </label>
+        <textarea
+          id="contexto-pedido"
+          class="wf-textarea"
+          placeholder="Describe brevemente tu objetivo, dudas o detalles importantes..."
+        ></textarea>
+      </div>
+
+      <div>
+        <span class="wf-field-label">2. Material de apoyo (opcional)</span>
+        <div class="wf-upload-box">+ Adjuntar documento</div>
+      </div>
+
+      <div class="wf-summary-box">
+        <div class="wf-summary-row">
+          <span>Saldo actual</span>
+          <strong>10 Créditos</strong>
+        </div>
+        <div class="wf-summary-row">
+          <span>Retención temporal</span>
+          <strong>- 2 Créditos</strong>
+        </div>
+        <div class="wf-summary-note">
+          Nota: La liberación de créditos está sujeta a tu confirmación final.
+        </div>
+      </div>
+
+      <div class="wf-spacer"></div>
+
+      <a class="wf-btn wf-btn--primary" href="04-confirmacion.html">
+        Confirmar y enviar
+      </a>
+    </section>
+  </main>
+</body>
+</html>

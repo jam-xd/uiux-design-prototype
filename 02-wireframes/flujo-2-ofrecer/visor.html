@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visor Flujo 2: Ofrecer mis habilidades</title>
+  <link rel="stylesheet" href="../../styles/reset.css">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #ececec;
+      color: #111111;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sr-radio {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .slide {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+    }
+
+    #s1:checked ~ .slide-1,
+    #s2:checked ~ .slide-2,
+    #s3:checked ~ .slide-3,
+    #s4:checked ~ .slide-4,
+    #s5:checked ~ .slide-5,
+    #s6:checked ~ .slide-6 {
+      display: flex;
+    }
+
+    .toolbar {
+      width: 100%;
+      background: #ffffff;
+      border-bottom: 2px solid #111111;
+      padding: 10px 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .toolbar-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .toolbar-back {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 10px;
+      border: 1px solid #111111;
+      border-radius: 8px;
+      background: #f2f2f2;
+    }
+
+    .toolbar-steps {
+      display: flex;
+      gap: 6px;
+    }
+
+    .step-pill {
+      padding: 5px 10px;
+      border: 1px solid #888888;
+      border-radius: 8px;
+      background: #ffffff;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .step-pill--active {
+      background: #111111;
+      color: #ffffff;
+      border-color: #111111;
+    }
+
+    .toolbar-nav {
+      display: flex;
+      gap: 8px;
+    }
+
+    .nav-btn {
+      padding: 6px 12px;
+      border: 1px solid #111111;
+      border-radius: 8px;
+      background: #ffffff;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .nav-btn--primary {
+      background: #111111;
+      color: #ffffff;
+    }
+
+    .nav-btn--disabled {
+      opacity: 0.35;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .stage {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+      flex: 1;
+    }
+
+    .stage iframe {
+      width: 430px;
+      max-width: 100%;
+      height: 890px;
+      border: none;
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+  <input class="sr-radio" type="radio" name="step" id="s1" checked>
+  <input class="sr-radio" type="radio" name="step" id="s2">
+  <input class="sr-radio" type="radio" name="step" id="s3">
+  <input class="sr-radio" type="radio" name="step" id="s4">
+  <input class="sr-radio" type="radio" name="step" id="s5">
+  <input class="sr-radio" type="radio" name="step" id="s6">
+
+  <!-- Paso 1 -->
+  <div class="slide slide-1">
+    <header class="toolbar">
+      <div class="toolbar-left">
+        <a class="toolbar-back" href="../../index.html">← Índice</a>
+        <span>Flujo 2: Ofrecer mis habilidades (1/6)</span>
+      </div>
+      <div class="toolbar-steps">
+        <label class="step-pill step-pill--active" for="s1">01</label>
+        <label class="step-pill" for="s2">02</label>
+        <label class="step-pill" for="s3">03</label>
+        <label class="step-pill" for="s4">04</label>
+        <label class="step-pill" for="s5">05</label>
+        <label class="step-pill" for="s6">06</label>
+      </div>
+      <div class="toolbar-nav">
+        <span class="nav-btn nav-btn--disabled">← Anterior</span>
+        <label class="nav-btn nav-btn--primary" for="s2">Siguiente →</label>
+      </div>
+    </header>
+    <div class="stage">
+      <iframe src="01-mis-servicios.html" title="01. Mis servicios"></iframe>
+    </div>
+  </div>
+
+  <!-- Paso 2 -->
+  <div class="slide slide-2">
+    <header class="toolbar">
+      <div class="toolbar-left">
+        <a class="toolbar-back" href="../../index.html">← Índice</a>
+        <span>Flujo 2: Ofrecer mis habilidades (2/6)</span>
+      </div>
+      <div class="toolbar-steps">
+        <label class="step-pill" for="s1">01</label>
+        <label class="step-pill step-pill--active" for="s2">02</label>
+        <label class="step-pill" for="s3">03</label>
+        <label class="step-pill" for="s4">04</label>
+        <label class="step-pill" for="s5">05</label>
+        <label class="step-pill" for="s6">06</label>
+      </div>
+      <div class="toolbar-nav">
+        <label class="nav-btn" for="s1">← Anterior</label>
+        <label class="nav-btn nav-btn--primary" for="s3">Siguiente →</label>
+      </div>
+    </header>
+    <div class="stage">
+      <iframe src="02-ofrecer-habilidad.html" title="02. Ofrecer habilidad"></iframe>
+    </div>
+  </div>
+
+  <!-- Paso 3 -->
+  <div class="slide slide-3">
+    <header class="toolbar">
+      <div class="toolbar-left">
+        <a class="toolbar-back" href="../../index.html">← Índice</a>
+        <span>Flujo 2: Ofrecer mis habilidades (3/6)</span>
+      </div>
+      <div class="toolbar-steps">
+        <label class="step-pill" for="s1">01</label>
+        <label class="step-pill" for="s2">02</label>
+        <label class="step-pill step-pill--active" for="s3">03</label>
+        <label class="step-pill" for="s4">04</label>
+        <label class="step-pill" for="s5">05</label>
+        <label class="step-pill" for="s6">06</label>
+      </div>
+      <div class="toolbar-nav">
+        <label class="nav-btn" for="s2">← Anterior</label>
+        <label class="nav-btn nav-btn--primary" for="s4">Siguiente →</label>
+      </div>
+    </header>
+    <div class="stage">
+      <iframe src="03-describir-servicio.html" title="03. Describir servicio"></iframe>
+    </div>
+  </div>
+
+  <!-- Paso 4 -->
+  <div class="slide slide-4">
+    <header class="toolbar">
+      <div class="toolbar-left">
+        <a class="toolbar-back" href="../../index.html">← Índice</a>
+        <span>Flujo 2: Ofrecer mis habilidades (4/6)</span>
+      </div>
+      <div class="toolbar-steps">
+        <label class="step-pill" for="s1">01</label>
+        <label class="step-pill" for="s2">02</label>
+        <label class="step-pill" for="s3">03</label>
+        <label class="step-pill step-pill--active" for="s4">04</label>
+        <label class="step-pill" for="s5">05</label>
+        <label class="step-pill" for="s6">06</label>
+      </div>
+      <div class="toolbar-nav">
+        <label class="nav-btn" for="s3">← Anterior</label>
+        <label class="nav-btn nav-btn--primary" for="s5">Siguiente →</label>
+      </div>
+    </header>
+    <div class="stage">
+      <iframe src="04-intercambio.html" title="04. Intercambio"></iframe>
+    </div>
+  </div>
+
+  <!-- Paso 5 -->
+  <div class="slide slide-5">
+    <header class="toolbar">
+      <div class="toolbar-left">
+        <a class="toolbar-back" href="../../index.html">← Índice</a>
+        <span>Flujo 2: Ofrecer mis habilidades (5/6)</span>
+      </div>
+      <div class="toolbar-steps">
+        <label class="step-pill" for="s1">01</label>
+        <label class="step-pill" for="s2">02</label>
+        <label class="step-pill" for="s3">03</label>
+        <label class="step-pill" for="s4">04</label>
+        <label class="step-pill step-pill--active" for="s5">05</label>
+        <label class="step-pill" for="s6">06</label>
+      </div>
+      <div class="toolbar-nav">
+        <label class="nav-btn" for="s4">← Anterior</label>
+        <label class="nav-btn nav-btn--primary" for="s6">Siguiente →</label>
+      </div>
+    </header>
+    <div class="stage">
+      <iframe src="05-revisar.html" title="05. Revisar"></iframe>
+    </div>
+  </div>
+
+  <!-- Paso 6 -->
+  <div class="slide slide-6">
+    <header class="toolbar">
+      <div class="toolbar-left">
+        <a class="toolbar-back" href="../../index.html">← Índice</a>
+        <span>Flujo 2: Ofrecer mis habilidades (6/6)</span>
+      </div>
+      <div class="toolbar-steps">
+        <label class="step-pill" for="s1">01</label>
+        <label class="step-pill" for="s2">02</label>
+        <label class="step-pill" for="s3">03</label>
+        <label class="step-pill" for="s4">04</label>
+        <label class="step-pill" for="s5">05</label>
+        <label class="step-pill step-pill--active" for="s6">06</label>
+      </div>
+      <div class="toolbar-nav">
+        <label class="nav-btn" for="s5">← Anterior</label>
+        <span class="nav-btn nav-btn--disabled">Siguiente →</span>
+      </div>
+    </header>
+    <div class="stage">
+      <iframe src="06-gestionar-solicitudes.html" title="06. Gestionar solicitudes"></iframe>
+    </div>
+  </div>
+</body>
+</html>

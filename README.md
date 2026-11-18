@@ -8,7 +8,7 @@ La especificación funcional, roles y flujos principales se encuentran en [produ
 
 ```text
 uiux-design-prototype/
-├── index.html                      # Hub / Mapa del proyecto (pendiente de crear)
+├── index.html                      # Hub / Mapa del proyecto
 ├── product-spec.md                 # Especificación del producto, roles y flujos
 ├── README.md
 │
@@ -45,6 +45,7 @@ uiux-design-prototype/
 
 - **Rutas relativas:** Usar siempre rutas relativas (ej. `../../styles/tokens.css`) en lugar de rutas absolutas (`/styles/...`) para que los archivos funcionen al abrirse directamente con `file://`.
 - **Nomenclatura de vistas:** Numeración con dos dígitos en `kebab-case` siguiendo el orden de cada flujo en `product-spec.md` (ej. `01-explorar.html`, `02-buscar.html`, ...).
+- **Visor por flujo:** Cada carpeta de flujo en `02-wireframes/` debe incluir su propio `visor.html` que muestre **únicamente** las pantallas de ese flujo, permitiendo avanzar paso a paso (`← Anterior` / `Siguiente →`) en una sola pestaña.
 - **Interactividad sin JavaScript:**
   - Navegación entre pasos con enlaces `<a href="...">`.
   - Acordeones y desplegables con `<details>` y `<summary>`.
