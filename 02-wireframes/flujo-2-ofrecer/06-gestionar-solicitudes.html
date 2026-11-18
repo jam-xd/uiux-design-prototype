@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>06. Gestionar solicitudes — Wireframe Flujo 2</title>
+  <link rel="stylesheet" href="../../styles/reset.css">
+  <link rel="stylesheet" href="../../styles/wireframe.css">
+</head>
+<body>
+  <div class="wf-canvas-header">
+    <span>06. Gestionar solicitudes recibidas</span>
+    <a class="wf-canvas-back" href="../../index.html">← Índice</a>
+  </div>
+
+  <main class="phone-frame">
+    <header class="wf-topbar wf-topbar--no-border">
+      <div class="wf-topbar-left">
+        <span>Mis servicios</span>
+      </div>
+      <span class="wf-badge-box">0 CR</span>
+    </header>
+
+    <div class="wf-tabs" role="tablist">
+      <a class="wf-tab" href="01-mis-servicios.html">Servicios (1)</a>
+      <div class="wf-tab wf-tab--active">Solicitudes (1)</div>
+    </div>
+
+    <section class="wf-content">
+      <div class="wf-text-meta">Ayuda con Excel • Recibida días después</div>
+
+      <article class="wf-card">
+        <div class="wf-card-footer" style="margin-bottom: 12px;">
+          <div class="wf-card-row" style="align-items: center;">
+            <div class="wf-avatar-circle" style="width: 40px; height: 40px;">LM</div>
+            <div class="wf-card-title" style="margin-bottom: 0;">Laura M.</div>
+          </div>
+          <span class="wf-status-badge">Nueva</span>
+        </div>
+
+        <p class="wf-field-label" style="margin-bottom: 10px;">Necesita: Ordenar su inventario</p>
+
+        <div class="wf-grid-2" style="margin-bottom: 8px;">
+          <div class="wf-callout" style="padding: 10px 12px;">
+            <div class="wf-callout-label">Fecha</div>
+            <div class="wf-text-body" style="font-size: 13px; font-weight: 700;">Jue 19 nov</div>
+          </div>
+          <div class="wf-callout" style="padding: 10px 12px;">
+            <div class="wf-callout-label">Modalidad</div>
+            <div class="wf-text-body" style="font-size: 13px; font-weight: 700;">Virtual • 2 h</div>
+          </div>
+        </div>
+
+        <div class="wf-summary-box" style="padding: 10px 12px; margin-bottom: 12px;">
+          <div class="wf-summary-row">
+            <span>Créditos</span>
+            <strong>2 CR (al confirmar)</strong>
+          </div>
+        </div>
+
+        <div class="wf-grid-2">
+          <a class="wf-btn wf-btn--secondary wf-btn--sm" href="#">Rechazar</a>
+          <a class="wf-btn wf-btn--primary wf-btn--sm" href="../flujo-1-solicitar/06-coordinacion.html">Aceptar</a>
+        </div>
+      </article>
+
+      <div class="wf-note-dashed">
+        <strong>Nota:</strong> Tras decidir, la tarjeta cambia a "Aceptada" o "Rechazada" y aparece aviso con deshacer sin cambiar de pantalla.
+      </div>
+
+      <div class="wf-spacer"></div>
+    </section>
+
+    <nav class="wf-bottom-nav" aria-label="Navegación principal">
+      <div class="wf-nav-item">
+        <span class="wf-nav-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>
+        </span>
+        <span>Inicio</span>
+      </div>
+      <div class="wf-nav-item">
+        <span class="wf-nav-icon">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        </span>
+        <span>Explorar</span>
+      </div>
+      <div class="wf-nav-item wf-nav-item--active">
+        <span class="wf-nav-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </span>
+        <span>Mis serv.</span>
+      </div>
+      <div class="wf-nav-item">
+        <span class="wf-nav-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </span>
+        <span>Solicitudes</span>
+      </div>
+      <div class="wf-nav-item">
+        <span class="wf-nav-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </span>
+        <span>Perfil</span>
+      </div>
+    </nav>
+  </main>
+</body>
+</html>

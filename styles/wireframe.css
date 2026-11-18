@@ -177,6 +177,18 @@ body {
   background-color: var(--wf-border-strong);
 }
 
+.wf-progress--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.wf-progress-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--wf-ink-muted);
+}
+
 /* ==========================================================================
    Callout / Guía Box
    ========================================================================== */
@@ -663,4 +675,260 @@ a.wf-card:hover {
   stroke-width: 1.8;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+/* ==========================================================================
+   Componentes adicionales (Flujo 2 - Ofrecer habilidades)
+   ========================================================================== */
+.wf-mini-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--wf-ink-secondary);
+}
+
+.wf-mini-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.wf-mini-step-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--wf-border-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  background-color: var(--wf-bg-phone);
+}
+
+.wf-mini-step-arrow {
+  color: var(--wf-ink-muted);
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+
+.wf-dashed-empty {
+  padding: 14px;
+  border: 1px dashed var(--wf-border-medium);
+  border-radius: var(--wf-radius-box);
+  font-size: 13px;
+  color: var(--wf-ink-muted);
+}
+
+.wf-row-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 13px 14px;
+  border: 1px solid var(--wf-border-medium);
+  border-radius: var(--wf-radius-box);
+  background-color: var(--wf-bg-phone);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.wf-row-link-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wf-radio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wf-radio-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid var(--wf-border-medium);
+  border-radius: var(--wf-radius-box);
+  background-color: var(--wf-bg-phone);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.wf-radio-option--selected {
+  border: 2px solid var(--wf-border-strong);
+  font-weight: 700;
+}
+
+.wf-radio-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1.5px solid var(--wf-border-strong);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.wf-radio-option--selected .wf-radio-dot::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--wf-border-strong);
+}
+
+.wf-input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid var(--wf-border-medium);
+  border-radius: var(--wf-radius-box);
+  background-color: var(--wf-bg-phone);
+  font-size: 14px;
+}
+
+.wf-helper-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--wf-ink-secondary);
+  text-decoration: underline;
+}
+
+.wf-list-box {
+  border: 1px solid var(--wf-border-medium);
+  border-radius: var(--wf-radius-box);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--wf-ink-secondary);
+}
+
+.wf-list-add {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--wf-ink-primary);
+  margin-top: 2px;
+}
+
+.wf-stepper-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wf-stepper-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--wf-border-strong);
+  border-radius: var(--wf-radius-sm);
+  background-color: var(--wf-bg-phone);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.wf-stepper-val {
+  min-width: 48px;
+  height: 40px;
+  border: 1px solid var(--wf-border-strong);
+  border-radius: var(--wf-radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.wf-segmented {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--wf-border-strong);
+  border-radius: var(--wf-radius-box);
+  overflow: hidden;
+}
+
+.wf-segmented-item {
+  padding: 10px 8px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  border-right: 1px solid var(--wf-border-medium);
+}
+
+.wf-segmented-item:last-child {
+  border-right: none;
+}
+
+.wf-segmented-item--active {
+  background-color: var(--wf-ink-primary);
+  color: var(--wf-bg-phone);
+  font-weight: 700;
+}
+
+.wf-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.wf-days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.wf-day-chip {
+  padding: 7px 0;
+  text-align: center;
+  border: 1px solid var(--wf-border-medium);
+  border-radius: var(--wf-radius-sm);
+  font-size: 12px;
+  font-weight: 700;
+  background-color: var(--wf-bg-phone);
+}
+
+.wf-day-chip--active {
+  background-color: var(--wf-ink-primary);
+  color: var(--wf-bg-phone);
+  border-color: var(--wf-ink-primary);
+}
+
+.wf-footer-actions {
+  display: flex;
+  gap: 10px;
+  padding: 14px 18px;
+  border-top: 1px solid var(--wf-border-light);
+  background-color: var(--wf-bg-phone);
+}
+
+.wf-footer-actions .wf-btn--back {
+  flex: 0 0 92px;
+}
+
+.wf-footer-actions .wf-btn--next {
+  flex: 1;
+}
+
+.wf-note-dashed {
+  padding: 12px 14px;
+  border: 1px dashed var(--wf-border-medium);
+  border-radius: var(--wf-radius-box);
+  font-size: 12px;
+  color: var(--wf-ink-muted);
+  background-color: var(--wf-bg-surface);
 }
